@@ -13,13 +13,13 @@ body {
 .name {
   position: absolute;
   color:indigo;
-  padding:5px;
-  margin: 5px;
+  padding:1px;
+  margin: 10px;
 }
 
 .navbar ul {
   list-style-type: none;
-  background-color:lavenderblush;
+  background-color:gainsboro;
   padding:0%;
   margin:0%;
   overflow:hidden;
@@ -39,7 +39,8 @@ body {
 }
 
 .navbar li {
-  float:right
+  float:right;
+  margin-left: 30px;
 }
 
 .herobanner {
@@ -47,6 +48,8 @@ body {
 }
 
 .subtitle {
+  display:block;
+  background-color: white;
   position:absolute;
   top:120px;
   right:20px;
@@ -55,6 +58,7 @@ body {
 
 #contentGrid {
   margin: 0px 0%;
+  border-radius:5px;
   display: grid;
   grid-template-rows: 200px 500px 200px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -67,7 +71,10 @@ body {
 
 #About {
   grid-area: about;
-  background-color:gold;
+  border-radius: 5px;
+  border-color:white;
+  border-style: solid;
+  background-color:gainsboro;
   text-align:center;
   padding:50px;
   font-family: Arial, Helvetica, sans-serif;
@@ -78,7 +85,10 @@ body {
 
 #Work {
   grid-area: work;
-  background-color:brown;
+  border-radius: 5px;
+  border-color:white;
+  border-style: solid;
+  background-color:gainsboro;
   text-align:center;
   padding:200px;
   font-family: Arial, Helvetica, sans-serif;
@@ -88,7 +98,10 @@ body {
 
 #Contact {
   grid-area: contact;
-  background-color: blue;
+  border-radius: 5px;
+  border-color:white;
+  border-style: solid;
+  background-color:gainsboro;
   text-align:center;
   padding:50px;
   font-family: Arial, Helvetica, sans-serif;
@@ -98,7 +111,10 @@ body {
 
 #about-info {
   grid-area: about-info;
-  background-color: #00ffff;
+  border-radius: 5px;
+  border-color:white;
+  border-style: solid;
+  background-color:gainsboro;
   text-align: left;
   padding:10px;
   font-family: Arial, Helvetica, sans-serif;
@@ -107,8 +123,12 @@ body {
 }
 
 #work-info {
+  display:block;
   grid-area: work-info;
-  background-color:orange;
+  border-radius: 5px;
+  border-color:white;
+  border-style: solid;
+  background-color:gainsboro;
   text-align:center;
   padding:100px;
   font-family: Arial, Helvetica, sans-serif;
@@ -118,7 +138,10 @@ body {
 
 #contact-info {
   grid-area: contact-info;
-  background-color:forestgreen;
+  border-radius: 5px;
+  border-color:white;
+  border-style: solid;
+  background-color:gainsboro;
   text-align:center;
   padding: 80px;
   font-family: Arial, Helvetica, sans-serif;
@@ -127,7 +150,7 @@ body {
 }
 
 .contentGridArea {
-  background-color: lavenderblush;
+  background-color:gainsboro;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -163,8 +186,8 @@ body {
 }
 
 .footer a:hover {
-  background-color:darkgray;
-  color:gainsboro;
+  background-color:white;
+  color:black;
 }
 
 .footer li {
@@ -188,56 +211,73 @@ body {
 
 .work1 {
   grid-area: work1;
-  background-color:gold;
+  background-color:white;
   text-align:center;
   padding:10px;
   font-family: Arial, Helvetica, sans-serif;
   color:indigo;
   font-size:large;
-  border-radius: 5px solid black;
-  
-}
+  position:absolute;
+  display: block;
+  }
+
+  .work1:hover {
+    background-color:gray;
+  }
 
 .work2 {
   grid-area: work2;
-  background-color:chartreuse;
+  background-color:white;
   text-align:center;
   padding:10px;
   font-family: Arial, Helvetica, sans-serif;
   color:indigo;
   font-size:large;
-  border-radius: 5px solid black;
+}
+
+.work2:hover {
+  background-color:grey;
 }
 
 .work3 {
   grid-area: work3;
-  background-color: blue;
+  background-color: white;
   text-align:center;
   padding:10px;
   font-family: Arial, Helvetica, sans-serif;
   color:indigo;
   font-size:large;
-  border-radius: 5px solid black;
+}
+
+.work3:hover {
+  background-color:gray;
 }
 
 .work4 {
   grid-area: work4;
-  background-color:brown;
+  background-color:white;
   text-align:center;
   padding:10px;
   font-family: Arial, Helvetica, sans-serif;
   color:indigo;
   font-size:large;
-  border-radius: 5px solid black;
+}
+
+.work4:hover {
+  background-color:grey;
 }
 
 .work5 {
   grid-area: work5;
-  background-color:hotpink;
+  background-color:white;
   text-align:center;
   padding:10px;
   font-family: Arial, Helvetica, sans-serif;
   color:indigo;
   font-size:large;
-  border-radius: 5px solid black;
+ 
+}
+
+.work5:hover {
+  background-color:grey;
 }
