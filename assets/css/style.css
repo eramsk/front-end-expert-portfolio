@@ -289,15 +289,6 @@ body {
   background-color:grey;
 }
 
-@media only screen and (max-width: 1000px) {
-  #navigation {
-    display: none;
-  }
-  .icons {
-    margin-left: auto;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .herobanner {
     position: static;
@@ -326,4 +317,14 @@ body {
     ;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
 
