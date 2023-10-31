@@ -164,6 +164,10 @@ body {
   margin:20px;
 }
 
+p {
+  margin-left: 10px;
+}
+
 /* add border to grid layout */
 
 .contentGridArea img {
