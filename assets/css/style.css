@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:white;
+  margin: 0;
+  padding: 0;
+  font-family:'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+.name {
+  position: absolute;
+  color:indigo;
+  padding:5px;
+  margin: 5px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color:lavenderblush;
+  padding:0%;
+  margin:0%;
+  overflow:hidden;
+}
+
+.navbar a {
+  color:indigo;
+  text-decoration:none;
+  padding:15px;
+  display:block;
+  text-align:right;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color:black;
+}
+
+.navbar li {
+  float:right
+}
+
+.herobanner {
+  position:relative;
+}
+
+.subtitle {
+  position:absolute;
+  top:120px;
+  right:20px;
+  color:indigo;
+}
+
+#contentGrid {
+  margin: 0px 0%;
+  display: grid;
+  grid-template-rows: 200px 500px 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "about about-info about-info"
+  "work work-info work-info"
+  "contact contact-info contact-info"
+  ;
+}
+
+#About {
+  grid-area: about;
+  background-color:gold;
+  text-align:center;
+  padding:50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:indigo;
+  font-size:large;
+  
+}
+
+#Work {
+  grid-area: work;
+  background-color:brown;
+  text-align:center;
+  padding:200px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:indigo;
+  font-size:large;
+}
+
+#Contact {
+  grid-area: contact;
+  background-color: blue;
+  text-align:center;
+  padding:50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:indigo;
+  font-size:large;
+}
+
+#about-info {
+  grid-area: about-info;
+  background-color: aqua;
+  text-align:center;
+  padding:50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:indigo;
+  font-size:medium;
+}
+
+#work-info {
+  grid-area: work-info;
+  background-color:orange;
+  text-align:center;
+  padding:100px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:indigo;
+  font-size:medium;
+}
+
+#contact-info {
+  grid-area: contact-info;
+  background-color:forestgreen;
+  text-align:center;
+  padding: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:indigo;
+  font-size:medium;
+}
+
+.contentGridArea {
+  background-color: lavenderblush;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  cursor: pointer;
+  display: grid;
+  align-content:flex-start;
+}
+
+/*.heading {
+  background-color:lavenderblush;
+  padding: 15px;
+  height: 25px;
+  color:indigo;
+  font-size: 18px;
+  align-items: center;
+  border-bottom: 1px solid indigo;
+} */
+
+.footer ul {
+  list-style-type: none;
+  background-color:gainsboro;
+  margin:5px;
+  overflow:hidden;
+} 
+
+.footer a {
+  color:indigo;
+  text-decoration:none;
+  padding:15px;
+  display:inline;
+  text-align:center;
+}
+
+.footer a:hover {
+  background-color:darkgray;
+  color:gainsboro;
+}
+
+.footer li {
+  float:right
+}
