@@ -7,14 +7,15 @@ body {
   margin: 0;
   padding: 0;
   font-family:'Times New Roman', Times, serif;
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .name {
   position: absolute;
+  background-color: white;
   color:indigo;
   padding:1px;
-  margin: 10px;
+  margin: 1px;
 }
 
 .navbar ul {
@@ -80,6 +81,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color:indigo;
   font-size:large;
+  cursor: default;
   
 }
 
@@ -94,6 +96,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color:indigo;
   font-size:large;
+  cursor: default;
 }
 
 #Contact {
@@ -107,30 +110,47 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color:indigo;
   font-size:large;
+  cursor: default;
 }
 
 #about-info {
   grid-area: about-info;
-  border-radius: 5px;
-  border-color:white;
-  border-style: solid;
-  background-color:gainsboro;
-  text-align: left;
   padding:10px;
+  border-radius: 5px;
+  border-color:white
+  padding:50px;
   font-family: Arial, Helvetica, sans-serif;
   color:indigo;
-  font-size:small;
+  font-size: small;
+  cursor: default;
 }
 
+.profilepic {
+  display:inline-flex;
+  margin:20px;
+}
+
+.contentGridArea img {
+  border-color:white;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.projectlink {
+  position:absolute;
+  background-color: white;
+  color:indigo;
+  margin-left: 10px;
+}
 #work-info {
   display:block;
+  padding:100px;
   grid-area: work-info;
   border-radius: 5px;
   border-color:white;
   border-style: solid;
   background-color:gainsboro;
   text-align:center;
-  padding:100px;
   font-family: Arial, Helvetica, sans-serif;
   color:indigo;
   font-size:medium;
@@ -160,16 +180,6 @@ body {
   align-content:flex-start;
 }
 
-/*.heading {
-  background-color:lavenderblush;
-  padding: 15px;
-  height: 25px;
-  color:indigo;
-  font-size: 18px;
-  align-items: center;
-  border-bottom: 1px solid indigo;
-} */
-
 .footer ul {
   list-style-type: none;
   background-color:gainsboro;
@@ -192,9 +202,6 @@ body {
 
 .footer li {
   float:left;
-}
-.profilepic {
-  float:right;
 }
 
 .work-section-grid {
@@ -281,3 +288,42 @@ body {
 .work5:hover {
   background-color:grey;
 }
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .herobanner {
+    position: static;
+    margin: 20px;
+  }
+
+  #contentGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "about"
+    "about-info"
+    "contact"
+    "contact-info"
+    ;
+  }
+  #contentGridArea {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "work1"
+      "work2"
+      "work3"
+      "work4"
+      "work5"
+    ;
+  }
+}
+
