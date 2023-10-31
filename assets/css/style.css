@@ -58,15 +58,24 @@ body {
 }
 
 #contentGrid {
-  margin: 0px 0%;
-  border-radius:5px;
-  display: grid;
-  grid-template-rows: 200px 500px 200px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px 300px 300px;
+  grid-template-columns: 1fr;
   grid-template-areas:
-  "about about-info about-info"
-  "work work-info work-info"
-  "contact contact-info contact-info"
+  "about"
+  "about-info"
+  "contact"
+  "contact-info"
+  ;
+}
+#contentGridArea {
+  grid-template-rows: 300px 300px 300px 300px 300px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "work1"
+    "work2"
+    "work3"
+    "work4"
+    "work5"
   ;
 }
 
@@ -289,36 +298,37 @@ body {
   background-color:grey;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   .herobanner {
     position: static;
     margin: 20px;
   }
-
   #contentGrid {
-    grid-template-rows: 300px 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
+    margin: 0px 0%;
+    border-radius:5px;
+    display: grid;
+    grid-template-rows: 200px 500px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "about"
-    "about-info"
-    "contact"
-    "contact-info"
+    "about about-info about-info"
+    "work work-info work-info"
+    "contact contact-info contact-info"
     ;
   }
-  #contentGridArea {
-    grid-template-rows: 300px 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
+  .work-section-grid {
+    margin: 0px 0%;
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      "work1"
-      "work2"
-      "work3"
-      "work4"
-      "work5"
+    "work1 work1 work1 work1"
+    "work2 work2 work3 work3"
+    "work4 work4 work5 work5"
     ;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   #navigation {
     display: none;
   }
