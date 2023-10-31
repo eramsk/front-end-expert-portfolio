@@ -98,12 +98,12 @@ body {
 
 #about-info {
   grid-area: about-info;
-  background-color: aqua;
-  text-align:center;
-  padding:50px;
+  background-color: #00ffff;
+  text-align: left;
+  padding:10px;
   font-family: Arial, Helvetica, sans-serif;
   color:indigo;
-  font-size:medium;
+  font-size:small;
 }
 
 #work-info {
@@ -157,7 +157,7 @@ body {
 .footer a {
   color:indigo;
   text-decoration:none;
-  padding:15px;
+  padding:20px;
   display:inline;
   text-align:center;
 }
@@ -168,5 +168,76 @@ body {
 }
 
 .footer li {
-  float:right
+  float:left;
+}
+.profilepic {
+  float:right;
+}
+
+.work-section-grid {
+  margin: 0px 0%;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "work1 work1 work1 work1"
+  "work2 work2 work3 work3"
+  "work4 work4 work5 work5"
+  ;
+}
+
+.work1 {
+  grid-area: work1;
+  background-color:gold;
+  text-align:center;
+  padding:10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:indigo;
+  font-size:large;
+  border-radius: 5px solid black;
+  
+}
+
+.work2 {
+  grid-area: work2;
+  background-color:chartreuse;
+  text-align:center;
+  padding:10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:indigo;
+  font-size:large;
+  border-radius: 5px solid black;
+}
+
+.work3 {
+  grid-area: work3;
+  background-color: blue;
+  text-align:center;
+  padding:10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:indigo;
+  font-size:large;
+  border-radius: 5px solid black;
+}
+
+.work4 {
+  grid-area: work4;
+  background-color:brown;
+  text-align:center;
+  padding:10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:indigo;
+  font-size:large;
+  border-radius: 5px solid black;
+}
+
+.work5 {
+  grid-area: work5;
+  background-color:hotpink;
+  text-align:center;
+  padding:10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:indigo;
+  font-size:large;
+  border-radius: 5px solid black;
 }
